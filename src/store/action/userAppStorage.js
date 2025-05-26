@@ -109,7 +109,7 @@ export const checkIfAdminIsLoggedIn = () => {
 
 
 
-      response = await fetch(`http://192.168.43.202:9090/adminbytoken`, {
+      response = await fetch(`https://alpha-backend-9q2l.onrender.com/adminbytoken`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -130,7 +130,7 @@ export const checkIfAdminIsLoggedIn = () => {
 export const loginAdmin = (data) => {
   return async (dispatch, getState) => {
     try {
-      let response = await fetch('http://192.168.43.202:9090/adminlogin', {
+      let response = await fetch('https://alpha-backend-9q2l.onrender.com/adminlogin', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -188,7 +188,7 @@ export const loginAdmin = (data) => {
 export const signupAdmin = (data) => {
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`http://192.168.43.202:9090/adminsignup`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/adminsignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -254,7 +254,7 @@ export const fetchUsers = () => {
       adminToken
     } = getState().userAuth
     try {
-      let response = await fetch(`http://192.168.43.202:9090/users`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/users`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -306,7 +306,7 @@ export const deleteUser = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/users/${id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/users/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -358,7 +358,7 @@ export const updateUser = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/users/${data._id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/users/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -414,7 +414,7 @@ export const fetchDeposits = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/deposits`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/deposits`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -466,7 +466,7 @@ export const deleteDeposit = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/deposits/${id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/deposits/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -518,7 +518,7 @@ export const updateDeposit = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/deposits/${data._id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/deposits/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -575,7 +575,7 @@ export const fetchWithdraws = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/withdraws`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/withdraws`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -626,7 +626,7 @@ export const deleteWithdraw = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/withdraws/${id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/withdraws/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -677,7 +677,7 @@ export const updateWithdraw = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/withdraws/${data._id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/withdraws/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -738,7 +738,7 @@ export const fetchTrades = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/trades`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/trades`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -789,7 +789,7 @@ export const deleteTrade = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/trades/${id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/trades/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -840,7 +840,7 @@ export const updateTrade = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/trades/${data._id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/trades/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -895,7 +895,7 @@ export const createTrade = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/trades`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/trades`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -954,7 +954,7 @@ export const fetchPackages = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/packages`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/packages`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -1005,7 +1005,7 @@ export const deletePackage = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/packages/${id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/packages/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -1056,7 +1056,7 @@ export const updatePackage = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/packages/${data._id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/packages/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1109,7 +1109,7 @@ export const createPackage = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/packages`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/packages`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1174,7 +1174,7 @@ export const fetchInvestments = () => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/investments`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/investments`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -1226,7 +1226,7 @@ export const deleteInvestment = (id) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/investments/${id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/investments/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -1278,7 +1278,7 @@ export const updateInvestment = (data) => {
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/investments/${data._id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/investments/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1334,7 +1334,7 @@ export const fetchDepositHandlers = () => {
     let { adminToken } = getState().userAuth;
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/deposit-handlers`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/deposit-handlers`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -1365,7 +1365,7 @@ export const deleteDepositHandler = (id) => {
     let { adminToken } = getState().userAuth;
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/deposit-handlers/${id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/deposit-handlers/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -1392,7 +1392,7 @@ export const updateDepositHandler = (data) => {
     let { adminToken } = getState().userAuth;
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/deposit-handlers/${data._id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/deposit-handlers/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1420,7 +1420,7 @@ export const createDepositHandler = (data) => {
     let { adminToken } = getState().userAuth;
 
     try {
-      let response = await fetch(`http://192.168.43.202:9090/deposit-handlers`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/deposit-handlers`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1457,7 +1457,7 @@ export const updateAdmin = (data) => {
     } = getState().userAuth//http://192.168.43.202:xxxxxxx9090
     //https://backend.AGMxx.net
     try {
-      let response = await fetch(`http://192.168.43.202:9090/admin/${data._id}`, {
+      let response = await fetch(`https://alpha-backend-9q2l.onrender.com/admin/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
