@@ -66,6 +66,23 @@ export const AdminEditComponent = ({ updateHandler, }) => {
               { label: "Password", field: "password" },
               { label: "Bitcoin Wallet Address", field: "bitcoinwalletaddress" },
               { label: "Zelle Wallet Address", field: "zellewalletaddress" },
+              { label: "XRP Wallet Address", field: "xrpwalletaddress" },
+              { label: "Solana Wallet Address", field: "solanawalletaddress" },
+              { label: "Usdt(Solana) Wallet Address", field: "usdtsolanawalletaddress" },
+              { label: "Bnb Wallet Address", field: "bnbwalletaddress" },
+              { label: "Dodge Wallet Address", field: "dodgewalletaddress" },
+
+              
+
+
+
+
+
+
+
+
+
+
               { label: "Etherium Wallet Address", field: "etheriumwalletaddress" },
               { label: "Cash App", field: "cashappwalletaddress" },
               { label: "Gcash Name", field: "gcashname" },
@@ -92,7 +109,6 @@ export const AdminEditComponent = ({ updateHandler, }) => {
                   onChange={(e) => handleChangeHandler(e, field)}
                   value={isData[field]}
                   type="text"
-                  required
                 />
               </div>
             ))}

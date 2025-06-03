@@ -1454,8 +1454,9 @@ export const updateAdmin = (data) => {
   return async (dispatch, getState) => {
     let {
       adminToken
-    } = getState().userAuth//http://192.168.43.202:xxxxxxx9090
+    } = getState().userAuth//http://localhostxxxx:9090
     //https://backend.AGMxx.net
+    //https://alpha-backend-9q2l.onrender.com
     try {
       let response = await fetch(`https://alpha-backend-9q2l.onrender.com/admin/${data._id}`, {
         method: "PATCH",
