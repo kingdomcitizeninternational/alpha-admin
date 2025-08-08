@@ -255,7 +255,7 @@ export const AdminDepositsComponent = ({ status }) => {
             }}
           >
             <td style={{ padding: '16px', color: '#374151' }}>
-              {data.user.email}
+              {data?.user?.email}
             </td>
             <td style={{ padding: '16px', color: '#374151' }}>
               {data.depositId}

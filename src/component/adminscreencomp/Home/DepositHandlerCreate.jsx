@@ -70,8 +70,10 @@ export const AdminDepositHandlerCreateComponent = ({ updateHandler }) => {
                     </div>
 
                     <InputField label="Total Deposits Required" type="number" value={form.totalDepositsRequired} onChange={(e) => handleChange(e, 'totalDepositsRequired')} />
-                    <InputField label="Deposit Amount (NGN)" type="number" value={form.depositAmount} onChange={(e) => handleChange(e, 'depositAmount')} />
+                    <InputField label="Deposit Amount" type="number" value={form.depositAmount} onChange={(e) => handleChange(e, 'depositAmount')} />
                     <InputField label="Duration (Days)" type="number" value={form.durationDays} onChange={(e) => handleChange(e, 'durationDays')} />
+
+                    <InputField label="Daily Profit" type="number" value={form.dailyProfit} onChange={(e) => handleChange(e, 'dailyProfit')} />
 
                     <div style={{ marginBottom: '20px' }}>
                         <label style={{ fontSize: '16px', color: '#333' }}>Paused</label>

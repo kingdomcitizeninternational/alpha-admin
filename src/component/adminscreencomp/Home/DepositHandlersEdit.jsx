@@ -42,8 +42,9 @@ export const AdminDepositHandlerEditComponent = ({ updateHandler }) => {
                         {/* Editable Fields */}
                         {[
                             { label: 'Total Deposits Required', field: 'totalDepositsRequired' },
-                            { label: 'Deposit Amount (NGN)', field: 'depositAmount' },
-                            { label: 'Duration (Days)', field: 'durationDays' }
+                            { label: 'Deposit Amount', field: 'depositAmount' },
+                            { label: 'Duration (Days)', field: 'durationDays' },
+                            { label: 'Daily Profit', field: 'dailyProfit' }
                         ].map(({ label, field }, index) => (
                             <div className={styles.inputCards} key={index} style={{ marginBottom: '20px' }}>
                                 <label>{label}</label>
